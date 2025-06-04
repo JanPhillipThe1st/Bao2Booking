@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fontFamily="@font/montserrat_medium"
+    android:layout_gravity="center"
+    tools:context=".Admin">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bajaj_promotional" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMyBajaj"
+            android:layout_width="156dp"
+            android:layout_height="41dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="#AFABA2"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/montserrat_light"
+            android:text="My Bajaj Re"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnBookings"
+            android:layout_width="156dp"
+            android:layout_height="41dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="#AFABA2"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Bookings"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Bookings of the day!"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/lvBookings"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="200dp"
+        android:forceHasOverlappingRendering="true"
+        android:overScrollMode="always"
+        android:scrollbars="horizontal|vertical" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#DA8C16"
+        android:backgroundTintMode="src_in"
+        android:text="Log out"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:backgroundTint="#F8F4EC"
+    android:background="#F8F4EC"
+    android:orientation="vertical"
+    tools:context=".Customer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DA8C16"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTabBarStyle"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_new_24"
+        app:title="Manage bao-bao"
+        app:titleTextColor="#DCF2F1" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lvVehicles"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
